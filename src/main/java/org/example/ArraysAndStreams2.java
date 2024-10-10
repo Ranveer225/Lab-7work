@@ -32,8 +32,15 @@ public class ArraysAndStreams2 {
                .filter(s -> s.compareToIgnoreCase("n") < 0)
                .sorted(String.CASE_INSENSITIVE_ORDER.reversed())
                .collect(Collectors.toList()));
+
+      // strings starting with a vowel (case insenstive)
+      System.out.printf("strings that start with a vowel: %s%n",
+              Arrays.stream(strings)
+                      .filter(s.toLowerCase()))
+                      .collect(Collectors.toList()));
    }
-} 
+}
+
 
 
 /**************************************************************************
