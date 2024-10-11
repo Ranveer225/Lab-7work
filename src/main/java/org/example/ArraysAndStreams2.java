@@ -38,8 +38,7 @@ public class ArraysAndStreams2 {
               Arrays.stream(strings)
                       .filter(s -> s.toLowerCase().matches("^[aeiou].*"))
                       .collect(Collectors.toList()));
-
-
+      
       // concatenate all strings into a single string
       System.out.printf("Concatenate strings: %s%n")
               Arrays.stream(strings)
