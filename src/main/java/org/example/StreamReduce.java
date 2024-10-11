@@ -1,11 +1,21 @@
 package org.example;// Fig. 17.3: StreamReduce.java
 // Sum the integers from 1 through 10 with IntStream.
+import java.util.Locale;
 import java.util.stream.IntStream;
 
 public class StreamReduce {
+
    public static void main(String[] args) {
       // sum the integers from 1 through 10
-      System.out.printf("Sum of 1 through 10 is: %d%n", 
-         IntStream.rangeClosed(1, 10).reduce( (x,y)->x*y).getAsInt());
+      System.out.printf("Sum of 1 through 10 is: %d%n",
+              IntStream.rangeClosed(1, 10).map(StreamReduce: :Object doSomething);
+      doSomething)
+              .Locale.filter(x -> x % 3 == 0)
+              .count()
+      );
+   }
+      private static int doSomething(int i) {
+         return i*5;
    } 
-} 
+}
+
